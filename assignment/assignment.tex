@@ -1,0 +1,76 @@
+\documentclass[12pt]{report}
+\usepackage[margin=1in]{geometry} 
+\usepackage[english]{babel}                     % Change language to adjust the date format/ index language
+\usepackage{amsmath,amsthm,amssymb,scrextend}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{graphicx} 
+\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[spanish]{babel}
+\usepackage{makecell}
+\usepackage{float}
+\renewcommand{\thesection}{\arabic{section}}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{advdate}
+
+
+\hypersetup{
+    hidelinks
+}
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\newcommand\pef[1]{[\ref{#1}]}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+\begin{document}
+\title{ \normalsize \textsc{Course Name Part 1} \\ Course Name Part 2
+		\\ [2.0cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{Name Line 1} \\ Name Line 2}
+		\HRule{2pt} \\ [0.5cm]
+		\normalsize \today \vspace*{5\baselineskip}}
+
+\date{}
+
+\author{
+		Author 1 \\
+        Author 2
+  }
+
+\maketitle
+
+\tableofcontents
+
+\pagestyle{fancy}
+\fancyhf{}
+\newpage
+\lhead{Short Name}
+\chead{Authors maybe here}
+\rhead{ \today}
+
+\section{Some section 1}
+
+La tasa de crecimiento del componente gigante \pef{fig:tasadecreci} se aproxima al valor 1 con un crecimiento logístico (en este punto todos los nodos estarían contenidos en el componente gigante). A partir del punto crítico en un valor medio de enlaces de 1, la tasa de crecimiento aumenta rápidamente y se aplana antes de alcanzar $y=1$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{picture.png}
+    \caption{Label here}
+    \label{fig:tasadecreci}
+\end{figure}
+
+
+
+\end{document}
+
+
+
